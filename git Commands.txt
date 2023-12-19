@@ -5,6 +5,8 @@ git init
 
 git status
 
+touch aKaReZa.c
+
 git add -A
 
 git commit -m "msg"
