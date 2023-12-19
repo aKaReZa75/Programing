@@ -1,10 +1,3 @@
-Version Control System (VCS)
-
-git
-
-distrubuted Version Control System (DVCS)
-
-
 git config --global user.name "aKaReZa"
 git config --global user.email "aKaReZa75@gmail.com"
 
@@ -20,14 +13,11 @@ clear
 
 git log
 
-git clone https://github.com/aKaReZa75/AVR.git
+shift + insert
+
+git clone https://github.com/aKaReZa75/Programing.git
 
 git pull
 
 git push
 
-shift + insert
-
-
-testtttttttttttttttttttt
-testtttsaighdkahsdkjhsakjdhkjasfbaskjdbsak
