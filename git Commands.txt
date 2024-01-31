@@ -1,25 +1,158 @@
-git config --global user.name "aKaReZa"
-git config --global user.email "aKaReZa75@gmail.com"
+/*
+ * @file  gitCommands.txt
+ *
+ * @brief Git is a free, open-source distributed version control system tool
+ *		  designed to handle small to very large projects with speed and efficiency. 
+ *		  It is commonly used for recording and tracking changes made to a file. 
+ *		  It enables various developers and programmers to work together and handle small to large projects efficiently.   
+ *
+ * @note  In this list you will learn about the most commonly used Git commands, along with examples and syntax.
+ *
+ */
 
-git init
 
-git status
+/*
+ * @command Config
+ *
+ * @brief   This command sets the author name and email address respectively to be used with your commits.
+ *			This specifies what email id and username will be used from a local repository.
+ *			
+ * @example git config --global user.name "aKaReZa"
+ *			git config --global user.email "aKaReZa75@gmail.com"
+ *
+ * @notes 	
+ */
 
-touch aKaReZa.c
 
-git add -A
+/*
+ * @command Init
+ *
+ * @brief   This command is used to create an empty Git repository. 
+ * 
+ * @example git init
+ *
+ * @notes 	After the git init command is used, a .git folder is created 
+ *			in the directory with some subdirectories.
+ *			Once the repository is initialized, the process of creating other files begins.
+ */
 
-git commit -m "msg"
 
-clear
+/*
+ * @command Status
+ *
+ * @brief   This command gives us all the necessary information about the current branch.
+ *			This command lists all the files that have to be committed. 
+ * 
+ * @example git status
+ *
+ * @notes 	Whether the current branch is up to date
+ * 			Whether there is anything to commit, push or pull
+ * 			Whether there are files staged, unstaged or untracked
+ * 			Whether there are files created, modified or deleted
+ */
 
-git log
 
-shift + insert
+/*
+ * @command Touch
+ *
+ * @brief   This command used to create an empty file. 
+ * 
+ * @example touch aKaReZa.c
+ *
+ * @notes 	
+ */
 
-git clone https://github.com/aKaReZa75/Programing.git
 
-git pull
+/*
+ * @command Add
+ *
+ * @brief   This command adds a file to the staging area.
+ *			When we create, modify or delete a file, these changes will happen in our local and won't be 
+ *			included in the next commit.
+ *			This command doesn't change the repository and the changes are not saved until we use git commit.
+ * 
+ * @example git add -A
+ *
+ * @notes 	To add everything at once: -A
+ * 			To add a single file: aKaReZa.C
+ * 			To add all .h file at once: "*.h"	
+ * 			To add all files whose names start with page at once: "page*"
+ */
 
-git push
+
+/*
+ * @command Commit
+ *
+ * @brief   This command record changes to the repository. 
+ * 			This is maybe the most-used command of Git. 
+ *			Once we reach a certain point in development, we want to save our changes.
+ * 			Git commit is like setting a checkpoint in the development process which you can go back to later if needed.
+ *			We also need to write a short message to explain what we have developed or changed in the source code.
+ *			
+ * @example git commit -m "commit message"
+ *
+ * @notes 	This command saves your changes only locally.
+ *			
+ */
+
+
+/*
+ * @command Clear
+ *
+ * @brief   This command is used to clear the git bash screen.
+ *			
+ * @example clear
+ *
+ * @notes 	
+ */
+
+
+/*
+ * @command Log
+ *
+ * @brief   This command is used to list the version history for the current branch.
+ *			
+ * @example git log
+ *
+ * @notes 	
+ */
+
+
+/*
+ * @command Clone
+ *
+ * @brief   This is a command for downloading existing source code from a remote repository. 
+ *	  		In other words, Git clone basically makes an identical copy of the latest version of 
+ *			a project in a repository and saves it to your computer.
+ * 
+ * @example git clone https://github.com/aKaReZa75/Programing.git
+ * 
+ * @notes   
+ */
+
+
+/*
+ * @command Pull
+ *
+ * @brief   This command is used to get updates from the remote repo. 
+ *			When we use this command, it gets the updates from remote repository (git fetch) 
+ *			and immediately applies the latest changes in your local (git merge).
+ *			
+ * @example git pull
+ *
+ * @notes 	This operation may cause conflicts that you need to solve manually.		
+ */
+
+
+/*
+ * @command Push
+ *
+ * @brief   After committing your changes, the next thing you want to do is send
+ *			your changes to the remote server. 
+ *			This command uploads your commits to the remote repository.
+ *			
+ * @example git push
+ *
+ * @notes 	This command only uploads changes that are committed.		
+ */
 
