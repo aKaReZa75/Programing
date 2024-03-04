@@ -1,0 +1,11 @@
+#ifndef _header2_H_
+#define _header2_H_
+
+#include <alcd.h>
+#include <stdint.h>
+#include "aKaReZa.h"
+
+void sayHello(void);
+void printSum(void);
+
+#endif

@@ -1,0 +1,5 @@
+VERSION:3 SOURCE_TIMESTAMP:583FB37A
+NODE:I LEVEL:0 LINE:1 "C:\Users\Hossein\Desktop\CodeVision\aKaReZa.h"
+NODE:F LEVEL:0 LINE:6 "Sum(uint8_t a,uint8_t b)"
+NODE:F LEVEL:0 LINE:13 "staticVarFun(void)"
+NODE:V LEVEL:0 LINE:15 "temp_S0010001000 -> RAM:????"

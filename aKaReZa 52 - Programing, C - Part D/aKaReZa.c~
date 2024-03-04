@@ -1,0 +1,21 @@
+#include "aKaReZa.h"
+
+extern char lcd[16];
+extern uint16_t ans=0;
+
+uint16_t Sum(uint8_t a, uint8_t b)
+{
+  uint16_t temp;
+  temp = a+b; 
+  return temp;
+};
+
+void staticVarFun(void)
+{
+  static uint8_t temp = 15; 
+  temp++;
+  sprintf(lcd, "Temp=%d", temp);
+  lcd_gotoxy(0,0);
+  lcd_puts(lcd);
+  ans++;
+};

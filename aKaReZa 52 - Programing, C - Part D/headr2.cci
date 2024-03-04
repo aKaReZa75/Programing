@@ -1,0 +1,4 @@
+VERSION:3 SOURCE_TIMESTAMP:583FB242
+NODE:I LEVEL:0 LINE:1 "C:\Users\Hossein\Desktop\CodeVision\header2.h"
+NODE:F LEVEL:0 LINE:5 "sayHello(void)"
+NODE:F LEVEL:0 LINE:11 "printSum(void)"

@@ -1,0 +1,5 @@
+VERSION:3 SOURCE_TIMESTAMP:583FB38D
+NODE:I LEVEL:0 LINE:1 "C:\Users\Hossein\Desktop\CodeVision\aKaReZa.h"
+NODE:V LEVEL:0 LINE:3 "lcd -> RAM:????"
+NODE:V LEVEL:0 LINE:4 "ans -> R3,R4"
+NODE:F LEVEL:0 LINE:6 "main(void)"
