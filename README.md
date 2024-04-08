@@ -6,6 +6,7 @@
 [![](https://img.shields.io/badge/Programing-C_Part_B-white)](https://youtu.be/2EDKP_W_4Zc)
 [![](https://img.shields.io/badge/Programing-C_Part_C-white)](https://youtu.be/5tlieeXvTMY)
 [![](https://img.shields.io/badge/Programing-C_Part_D-white)](https://youtu.be/a7NB3CK2SJs)
+[![](https://img.shields.io/badge/Programing-C_Part_E-white)](https://youtu.be/1c4Gjq5hifw)
 
 
 Contact Us
