@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/Programing-C_Part_C-white)](https://youtu.be/5tlieeXvTMY)
 [![](https://img.shields.io/badge/Programing-C_Part_D-white)](https://youtu.be/a7NB3CK2SJs)
 [![](https://img.shields.io/badge/Programing-C_Part_E-white)](https://youtu.be/1c4Gjq5hifw)
-[![](https://img.shields.io/badge/Programing-Numbers-white)](https://youtu.be/jUElTdh9My0)
+[![](https://img.shields.io/badge/Programing-Numbers-white)](https://youtu.be/Jierza_sBS0)
 
 
 Contact Us
