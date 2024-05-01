@@ -1,0 +1,18 @@
+#include <stdint.h>
+#include <util/delay.h>
+
+#define DDRB  *((uint8_t *) 0x24)
+#define PORTB *((uint8_t *) 0x25)
+
+int main(void)
+{
+  DDRB = 1<<0;
+
+  while(1)
+  {
+    PORTB = 1<<0;
+    _delay_ms(1000);
+    PORTB = 0<<0;
+    _delay_ms(1000);    
+  };
+};

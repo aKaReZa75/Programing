@@ -1,0 +1,29 @@
+#include <stdint.h>
+#include <util/delay.h>
+
+#define bitSet(_Reg, _Bit) (_Reg |= (1<<_Bit))
+#define bitClear(_Reg, _Bit) (_Reg &= ~(1<<_Bit))
+#define bitToggle(_Reg, _Bit) (_Reg ^= 1<<_Bit)
+#define bitCheck(_Reg, _Bit) ((_Reg>>_Bit) & 0x01)
+#define bitChange(_Reg, _Bit, Value) (Value == 1 ? bitSet(_Reg, _Bit) : bitClear(_Reg, _Bit))
+
+typedef struct
+{
+  uint8_t PIN;  // 0x23
+  uint8_t DDR;  // 0x24 
+  uint8_t PORT; // 0x25
+}GPIO_Type;
+
+#define GPIOB ((GPIO_Type*) 0x23)
+
+int main(void)
+{
+  bitSet(GPIOB->DDR, 0);
+  while(1)
+  {
+    bitSet(GPIOB->PORT, 0);
+    _delay_ms(1000);
+    bitClear(GPIOB->PORT, 0);
+    _delay_ms(1000);    
+  };
+};
