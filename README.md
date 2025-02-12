@@ -5,16 +5,29 @@ Welcome to the **Embedded-C** repository! This repository provides a comprehensi
 > It is absolutely critical that you carefully read every single word of this document, line by line, to ensure you don't miss any details. Nothing can be overlooked.
 
 # 🔗 Resources
-  Here you will find a collection of useful links and documents related to Embedded C.   
-  These resources include datasheets, tutorials, and essential tools to get you started and guide you through.
-  
-> [!TIP]
+
+Here you will find a collection of useful links and documents related to Embedded C.  
+These resources include datasheets, tutorials, and essential tools to get you started and guide you through.
+
+> [!TIP]  
 > The resources are detailed in the sections below.  
 > To access any of them, simply click on the corresponding blue link.
 
-- [Video PlayList](./Videos.md)
+- [Video PlayList](./Videos.md)  
   ---  
-  All Embedded-C videos related to this topic are available at this link.  
+  All Embedded-C videos related to this topic are available at this link, offering a visual guide to various concepts.
+
+- [Variables and Data Type in C Programming](./Variable.md)  
+  ---  
+  This document provides a comprehensive explanation of defining and using variables in Embedded C, with examples and best practices.
+
+- [Memory Classes in C](./MemoryClass.md)  
+  ---  
+  An overview of memory classes in C, such as `auto`, `static`, and `extern`, and their usage in embedded systems to manage variable lifespan and scope.
+
+- [Arrays, Strings, and String Handling in C](./Array_String.md)  
+  ---  
+  A detailed guide to working with arrays and strings, including multi-dimensional arrays, string manipulation functions, and handling memory efficiently in embedded C. 
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
