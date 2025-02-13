@@ -33,6 +33,11 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   A detailed guide to different loop structures in C, such as `while`, `do-while`, and `for`, along with control flow statements like `goto`, `break`, and `continue`, with practical examples and their applications in embedded systems.
 
+- [Conditional Statements in C](./Conditional.md)  
+  ---  
+  A comprehensive guide to conditional statements in C, including the use of `if`, `else if`, `else`, the ternary operator, and `switch-case`, with examples and practical applications in embedded systems.
+
+
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
 1. **Using Git Bash and Cloning the Repository**
