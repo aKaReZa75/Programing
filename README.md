@@ -29,9 +29,9 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   A detailed guide to working with arrays and strings, including multi-dimensional arrays, string manipulation functions, and handling memory efficiently in embedded C. 
 
-- [Loops in C](./Loops.md)  
+- [Loops and Control Flow in C](./Loops.md)  
   ---  
-  A detailed guide to different loop structures in C, such as `while`, `do-while`, and `for`, with practical examples and their applications in embedded systems.
+  A detailed guide to different loop structures in C, such as `while`, `do-while`, and `for`, along with control flow statements like `goto`, `break`, and `continue`, with practical examples and their applications in embedded systems.
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:

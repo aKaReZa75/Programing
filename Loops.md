@@ -135,6 +135,141 @@ int main()
 - **`do-while` loop**: The code block runs at least once, and the condition is checked after the first iteration.
 - **`for` loop**: Best suited when the number of iterations is known ahead of time. It combines initialization, condition checking, and increment/decrement into a single line.
    
+
+# C Control Flow: `goto`, `break`, and `continue`
+
+This section discusses the usage of the control flow statements `goto`, `break`, and `continue` in C programming. These statements are used to alter the normal flow of control in the program, especially useful in embedded systems where specific control is needed for efficiency or error handling.
+
+## 1. `goto` Statement
+
+The `goto` statement is used to transfer control to another part of the program. While it's often discouraged due to its potential to make code less readable, it can still be useful in specific situations, especially in embedded systems for handling errors or skipping over complex conditions.
+
+### Syntax:
+```c
+goto label;
+...
+label: 
+    // code block to jump to
+```
+
+### Explanation:
+- The `goto` statement transfers control to the label specified.
+- The label must be defined somewhere in the function.
+- It is important to use `goto` sparingly, as overuse can make the code harder to maintain and understand.
+
+### Example:
+```c
+#include <stdio.h>
+
+int main() 
+{
+    int x = 0;
+
+    /* Check if x is zero */
+    if (x == 0) 
+    {
+        goto label;  /**< Jump to label if x is zero */
+    }
+
+    printf("This will not be printed.\n");
+
+label:
+    printf("Control jumped to label!\n");  /**< Code after the jump */
+
+    return 0;
+}
+```
+
+### Explanation of the Example:
+- If `x` is 0, the program will jump to the `label` and print `"Control jumped to label!"`.
+- The statement `"This will not be printed."` is skipped due to the `goto` statement.
+
+## 2. `break` Statement
+
+The `break` statement is used to exit from a loop or a `switch` statement prematurely. It immediately terminates the nearest enclosing loop or `switch`, transferring control to the next statement after the loop or `switch`.
+
+### Syntax:
+```c
+break;
+```
+
+### Explanation:
+- The `break` statement is commonly used inside loops to exit when a specific condition is met.
+- It can also be used to exit from a `switch` statement to avoid fall-through behavior.
+
+### Example:
+```c
+#include <stdio.h>
+
+int main() 
+{
+    int i;
+
+    /* For loop that will break when i equals 3 */
+    for (i = 0; i < 5; i++) 
+    {
+        if (i == 3) 
+        {
+            break;  /**< Exit the loop when i equals 3 */
+        }
+        printf("i is: %d\n", i);
+    }
+
+    printf("Loop terminated early.\n");
+
+    return 0;
+}
+```
+
+### Explanation of the Example:
+- The loop will terminate when `i` equals 3 due to the `break` statement.
+- The output will print values of `i` up to 2, and then it will print `"Loop terminated early."`.
+
+## 3. `continue` Statement
+
+The `continue` statement is used to skip the current iteration of a loop and proceed with the next iteration. It does not exit the loop entirely, but simply skips over the remaining code in the current iteration.
+
+### Syntax:
+```c
+continue;
+```
+
+### Explanation:
+- When the `continue` statement is encountered inside a loop, it skips the remaining code in the current iteration and proceeds to the next iteration.
+- It is commonly used to skip over certain iterations based on a condition.
+
+### Example:
+```c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    /* For loop that skips printing even numbers */
+    for (i = 0; i < 5; i++) 
+    {
+        if (i % 2 == 0) 
+        {
+            continue;  /**< Skip even numbers */
+        }
+        printf("i is: %d\n", i);
+    }
+
+    return 0;
+}
+```
+
+### Explanation of the Example:
+- The loop will skip printing even values of `i` because of the `continue` statement.
+- The output will print only odd numbers: `1` and `3`.
+
+## Conclusion
+
+- **`goto`**: Use sparingly for jumping to specific points in the program, mainly in error handling or situations where other control structures are not suitable.
+- **`break`**: Ideal for prematurely exiting from loops or `switch` statements.
+- **`continue`**: Best used when you want to skip over specific iterations in a loop without breaking out of it entirely.
+   
+   
 # 🌟 Support Me
 If you found this repository useful:
 - Subscribe to my [YouTube Channel](https://www.youtube.com/@aKaReZa75).
