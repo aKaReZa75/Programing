@@ -29,6 +29,14 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   A detailed guide to working with arrays and strings, including multi-dimensional arrays, string manipulation functions, and handling memory efficiently in embedded C. 
 
+- [ASCII Codes, Escape Sequences in C](./ASCII.md)  
+  ---  
+  This document provides a comprehensive explanation of ASCII codes, escape sequences, and control characters in C programming for microcontrollers. It covers how to handle character manipulation, communication protocols, and text formatting efficiently in embedded systems.
+
+- [Data Structures in C](./Data_Structures.md)  
+  ---  
+  This document covers essential data structures in Embedded C, including `enum`, `struct`, `union`, `bitfield`, and `typedef`. It provides detailed explanations, examples, and practical applications of these data structures in embedded systems programming, helping to manage and organize data effectively for hardware configurations and efficient memory management.
+
 - [Loops and Control Flow in C](./Loops.md)  
   ---  
   A detailed guide to different loop structures in C, such as `while`, `do-while`, and `for`, along with control flow statements like `goto`, `break`, and `continue`, with practical examples and their applications in embedded systems.
@@ -36,11 +44,6 @@ These resources include datasheets, tutorials, and essential tools to get you st
 - [Conditional Statements in C](./Conditional.md)  
   ---  
   A comprehensive guide to conditional statements in C, including the use of `if`, `else if`, `else`, the ternary operator, and `switch-case`, with examples and practical applications in embedded systems.
-
-- [ASCII Codes, Escape Sequences in C](./ASCII.md)  
-  ---  
-  This document provides a comprehensive explanation of ASCII codes, escape sequences, and control characters in C programming for microcontrollers. It covers how to handle character manipulation, communication protocols, and text formatting efficiently in embedded systems.
-
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
