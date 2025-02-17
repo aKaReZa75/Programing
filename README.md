@@ -37,6 +37,10 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   A comprehensive guide to conditional statements in C, including the use of `if`, `else if`, `else`, the ternary operator, and `switch-case`, with examples and practical applications in embedded systems.
 
+- [ASCII Codes, Escape Sequences in C](./ASCII.md)  
+  ---  
+  This document provides a comprehensive explanation of ASCII codes, escape sequences, and control characters in C programming for microcontrollers. It covers how to handle character manipulation, communication protocols, and text formatting efficiently in embedded systems.
+
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
