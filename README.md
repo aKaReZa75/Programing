@@ -45,6 +45,10 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   A comprehensive guide to conditional statements in C, including the use of `if`, `else if`, `else`, the ternary operator, and `switch-case`, with examples and practical applications in embedded systems.
 
+- [Standard I/O in C](./STDIO.md)  
+  ---  
+  This document offers a concise guide to key C programming concepts for embedded systems, including Format Specifiers, Literals, and functions like sprintf, snprintf, and sscanf. 
+
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
 1. **Using Git Bash and Cloning the Repository**
