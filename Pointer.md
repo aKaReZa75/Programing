@@ -757,7 +757,7 @@ int main(void)
 }
 ```
 
-#### Output:
+##### Output:
 ```
 Value: 10
 ```
