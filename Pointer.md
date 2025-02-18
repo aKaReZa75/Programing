@@ -6,7 +6,7 @@ In C programming, **pointers** are variables that store the memory address of an
 A pointer is a variable that stores the memory address of another variable. Instead of holding data directly, it holds the address of a memory location where the data is stored. This is particularly useful in low-level programming, such as microcontroller applications, where direct memory access is often needed.   
 The **dereference operator (`*`)** is used to access the value at the address stored in a pointer, while the **address-of operator (`&`)** is used to get the memory address of a variable.
 
-### Pointer Syntax
+## Pointer Syntax
 
 ```c
 data_type *pointer_name;
@@ -428,11 +428,9 @@ In the context of **microcontrollers**, function pointers are particularly usefu
 
 Function pointers are commonly used in embedded systems to execute different functions based on conditions or events that occur during runtime, making the code more modular and efficient.
 
-## Syntax of Function Pointer
+### Syntax of Function Pointer
 
 A function pointer is declared similarly to a regular pointer, but it must include the return type and parameters of the function it is pointing to.
-
-### General Syntax:
 
 ```c
 return_type (*pointer_name)(parameter_type1, parameter_type2, ...);
@@ -443,7 +441,7 @@ Where:
 - `pointer_name` is the name of the pointer.
 - `parameter_type1, parameter_type2, ...` are the types of parameters that the function accepts.
 
-### Example:
+#### Example:
 
 ```c
 int (*function_ptr)(int, int);  /* Pointer to a function that takes two integers and returns an integer */
@@ -526,26 +524,26 @@ int subtract(int a, int b)
 }
 ```
 
-### Explanation:
+#### Explanation:
 1. The function pointer `operation` is declared to point to functions that take two integers and return an integer.
 2. The pointer `operation` is first assigned to the `add` function and then used to call it.
 3. Later, the pointer is reassigned to the `subtract` function and used again.
 
-### Output:
+#### Output:
 
 ```
 Addition: 15
 Subtraction: -5
 ```
 
-## Use Cases in Microcontrollers
+### Use Cases in Microcontrollers
 
 Function pointers are extensively used in microcontroller programming for the following purposes:
 
-### 1. **Callback Functions**
+#### 1. **Callback Functions**
 In event-driven systems, a function pointer can be used to handle events dynamically by pointing to the appropriate callback function.
 
-#### Example:
+##### Example:
 
 ```c
 #include <stdio.h>
@@ -575,19 +573,19 @@ int main(void)
 }
 ```
 
-### 2. **Interrupt Handling**
+#### 2. **Interrupt Handling**
 In microcontroller programming, function pointers can be used to assign interrupt service routines (ISR) dynamically to different interrupt vectors.
 
-### 3. **State Machines**
+#### 3. **State Machines**
 Function pointers are useful in implementing state machines, where each state corresponds to a different function that is dynamically invoked based on the current state.
 
-## Benefits of Using Function Pointers in Microcontrollers
+### Benefits of Using Function Pointers in Microcontrollers
 
 1. **Modularity**: Function pointers allow for dynamic behavior, where different functions can be swapped or called at runtime based on system states or events.
 2. **Reduced Code Duplication**: Instead of writing multiple if-else or switch-case blocks, function pointers can simplify the code by linking directly to specific functions.
 3. **Memory Efficiency**: Function pointers help in reducing the size of code in systems with limited memory, such as microcontrollers, by centralizing the function dispatching mechanism.
 
-## Things to Consider
+### Things to Consider
 
 1. **Memory Access**: Function pointers can be tricky in memory-constrained environments like microcontrollers. Ensure that function pointers are used efficiently to minimize memory usage.
 2. **Debugging**: Debugging code with function pointers can be difficult since the function that gets executed is determined at runtime.
@@ -607,8 +605,6 @@ These concepts are particularly useful in embedded systems (microcontroller prog
 ### 1. Constant Pointer (`const` Pointer)
 A **constant pointer** is a pointer whose address cannot be changed after initialization. This means that the pointer will always point to the same memory location, but the value at that location can be modified.
 
-### Syntax:
-
 ```c
 type * const pointer_name;
 ```
@@ -617,7 +613,7 @@ Where:
 - `type` is the type of data the pointer will point to.
 - `pointer_name` is the name of the pointer.
 
-### Example:
+#### Example:
 
 ```c
 int x = 10, y = 20;
@@ -628,11 +624,11 @@ int * const ptr = &x;  /* Constant pointer to integer */
 ptr = &y;  /* Error: cannot change the address the pointer holds */
 ```
 
-### Explanation:
+##### Explanation:
 - The pointer `ptr` is constant, meaning its address cannot be changed after it is initialized.
 - The value at the location pointed to by `ptr` (i.e., `x`) can still be modified.
 
-### Example Code:
+#### Example Code:
 
 ```c
 #include <stdio.h>
@@ -654,7 +650,7 @@ int main(void)
 }
 ```
 
-### Output:
+##### Output:
 ```
 Before: 10
 After: 15
@@ -665,8 +661,6 @@ After: 15
 ### 2. Pointer to Constant (`const` Data)
 A **pointer to constant** is a pointer that points to a constant value. This means the data being pointed to cannot be changed through the pointer, but the pointer itself can point to different locations.
 
-### Syntax:
-
 ```c
 const type * pointer_name;
 ```
@@ -675,7 +669,7 @@ Where:
 - `const` indicates that the data the pointer is pointing to is constant.
 - `pointer_name` is the name of the pointer.
 
-### Example:
+#### Example:
 
 ```c
 int x = 10;
@@ -685,11 +679,11 @@ const int * ptr = &x;  /* Pointer to constant integer */
 ptr = &y;   /* OK: can change the address the pointer holds */
 ```
 
-### Explanation:
+##### Explanation:
 - The pointer `ptr` can point to different memory locations, but the value it points to cannot be modified through the pointer.
 - You cannot change the value of `x` via `ptr`, but you can change `ptr` to point to another integer.
 
-### Example Code:
+#### Example Code:
 
 ```c
 #include <stdio.h>
@@ -711,7 +705,7 @@ int main(void)
 }
 ```
 
-### Output:
+##### Output:
 ```
 Before: 10
 After: 20
@@ -722,8 +716,6 @@ After: 20
 ### 3. Constant Pointer to Constant (`const` Pointer to `const`)
 A **constant pointer to constant** is a pointer that cannot change the address it holds, and also cannot modify the value at the address it points to. Both the pointer and the data it points to are constant.
 
-### Syntax:
-
 ```c
 const type * const pointer_name;
 ```
@@ -732,7 +724,7 @@ Where:
 - The first `const` means that the data the pointer is pointing to is constant.
 - The second `const` means that the pointer itself is constant (i.e., it cannot be reassigned to point to a different address).
 
-### Example:
+#### Example:
 
 ```c
 int x = 10;
@@ -742,11 +734,11 @@ const int * const ptr = &x;  /* Constant pointer to constant integer */
 ptr = &y;   /* Error: cannot change the address the pointer holds */
 ```
 
-### Explanation:
+##### Explanation:
 - Neither the pointer `ptr` nor the value `x` can be changed.
 - The address the pointer holds cannot be modified, and the value at that address cannot be modified either.
 
-### Example Code:
+#### Example Code:
 
 ```c
 #include <stdio.h>
@@ -765,7 +757,7 @@ int main(void)
 }
 ```
 
-### Output:
+#### Output:
 ```
 Value: 10
 ```
