@@ -49,6 +49,14 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   This document offers a concise guide to key C programming concepts for embedded systems, including Format Specifiers, Literals, and functions like sprintf, snprintf, and sscanf. 
 
+- [Functions in C](./Function.md)  
+  ---  
+  This document provides a detailed explanation of functions in Embedded C, covering topics such as function definition, function prototypes, parameters, return types, recursion, inline functions, and best practices for organizing code effectively in embedded systems programming.
+
+- [Pointers in C](./Pointer.md)  
+  ---  
+  This document provides a comprehensive guide to pointers in Embedded C, including pointer declaration, dereferencing, pointer arithmetic, dynamic memory allocation, pointers to functions, and their applications in managing memory and hardware in embedded systems.
+
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
 1. **Using Git Bash and Cloning the Repository**
