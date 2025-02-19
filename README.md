@@ -25,6 +25,10 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   An overview of memory classes in C, such as `auto`, `static`, and `extern`, and their usage in embedded systems to manage variable lifespan and scope.
 
+- [Comments and Doxygen Format in C](./Comment.md)  
+  ---  
+  This document provides a comprehensive guide on how to use comments in C for embedded systems programming, including the different types of comments (single-line, multi-line), Doxygen-style comments for automatic documentation generation, and best practices for effective commenting and documentation in embedded projects.
+
 - [Arrays, Strings, and String Handling in C](./Array_String.md)  
   ---  
   A detailed guide to working with arrays and strings, including multi-dimensional arrays, string manipulation functions, and handling memory efficiently in embedded C. 
