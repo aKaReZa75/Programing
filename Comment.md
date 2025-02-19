@@ -160,7 +160,8 @@ Just like structures, you can also document `unions` using Doxygen. A union allo
  * This union can store either an integer or a floating-point value,
  * depending on the type of sensor being read.
  */
-typedef union {
+typedef union 
+{
     /**< Integer value for sensor reading */
     int int_value;
     
@@ -268,7 +269,8 @@ The format is almost the same for C++ source files, but you may want to include 
 
 #include "sensor.h"
 
-class Sensor {
+class Sensor 
+{
     // Class implementation
 };
 ```
@@ -296,12 +298,14 @@ Here is a more detailed example of how you might document a full file:
 #include "temperature_sensor.h"
 
 // Function to initialize the temperature sensor
-void init_temp_sensor() {
+void init_temp_sensor() 
+{
     // Sensor initialization code
 }
 
 // Function to read temperature from the sensor
-float read_temperature() {
+float read_temperature() 
+{
     // Code to read temperature
     return 25.0; // Example value
 }
@@ -369,7 +373,8 @@ Here is a list of key Doxygen tags and their usage:
  * @param[in] sensor The sensor object to read from.
  * @return The temperature in Celsius.
  */
-float read_temperature(Temperature_Sensor sensor) {
+float read_temperature(Temperature_Sensor sensor) 
+{
     // Code to read temperature
     return sensor.temperature;
 }
