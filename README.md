@@ -37,6 +37,11 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   This document covers essential data structures in Embedded C, including `enum`, `struct`, `union`, `bitfield`, and `typedef`. It provides detailed explanations, examples, and practical applications of these data structures in embedded systems programming, helping to manage and organize data effectively for hardware configurations and efficient memory management.
 
+- [Operators in C](./Operators.md)  
+  ---  
+  This document offers a comprehensive explanation of various operators in C programming, including **Arithmetic Operators**, **Relational Operators**, **Assignment Operators**, **Pre/Post Operators**, **Unary Operators**, and **Logical Operators**. It covers their usage with examples, helping to manipulate data, control flow, and perform complex computations effectively in embedded systems programming.
+
+
 - [Loops and Control Flow in C](./Loops.md)  
   ---  
   A detailed guide to different loop structures in C, such as `while`, `do-while`, and `for`, along with control flow statements like `goto`, `break`, and `continue`, with practical examples and their applications in embedded systems.
