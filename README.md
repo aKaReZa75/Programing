@@ -57,6 +57,10 @@ These resources include datasheets, tutorials, and essential tools to get you st
   ---  
   This document provides a comprehensive guide to pointers in Embedded C, including pointer declaration, dereferencing, pointer arithmetic, dynamic memory allocation, pointers to functions, and their applications in managing memory and hardware in embedded systems.
 
+- [Type Casting in C](./Casting.md)  
+  ---  
+  This document provides an in-depth explanation of type casting in C for microcontrollers, covering both **implicit** and **explicit** casting, along with examples and potential pitfalls. It helps in understanding how to manage data types efficiently, ensuring correct behavior and preventing issues like data loss and undefined behavior in embedded systems programming.
+
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
 1. **Using Git Bash and Cloning the Repository**
