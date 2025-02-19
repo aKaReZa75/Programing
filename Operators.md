@@ -126,7 +126,8 @@ This operator checks whether two values are equal.
 
 ```c
 int a = 5, b = 10;
-if (a == b) {
+if (a == b) 
+{
     // This condition is false because 5 is not equal to 10
 }
 ```
@@ -136,7 +137,8 @@ This operator checks whether two values are not equal.
 
 ```c
 int a = 5, b = 10;
-if (a != b) {
+if (a != b) 
+{
     // This condition is true because 5 is not equal to 10
 }
 ```
@@ -146,7 +148,8 @@ This operator checks if the left operand is greater than the right operand.
 
 ```c
 int a = 5, b = 3;
-if (a > b) {
+if (a > b) 
+{
     // This condition is true because 5 is greater than 3
 }
 ```
@@ -156,7 +159,8 @@ This operator checks if the left operand is smaller than the right operand.
 
 ```c
 int a = 5, b = 10;
-if (a < b) {
+if (a < b) 
+{
     // This condition is true because 5 is less than 10
 }
 ```
@@ -166,7 +170,8 @@ This operator checks if the left operand is greater than or equal to the right o
 
 ```c
 int a = 5, b = 5;
-if (a >= b) {
+if (a >= b) 
+{
     // This condition is true because 5 is equal to 5
 }
 ```
@@ -176,7 +181,8 @@ This operator checks if the left operand is smaller than or equal to the right o
 
 ```c
 int a = 5, b = 10;
-if (a <= b) {
+if (a <= b) 
+{
     // This condition is true because 5 is less than or equal to 10
 }
 ```
