@@ -169,7 +169,7 @@ typedef union {
 } Sensor_Reading;
 ```
 
-### Explanation:
+#### Explanation:
 - `@brief`: Provides a brief description of the union’s purpose.
 - Each member of the union is documented using `/**<`, explaining what each field represents.
   - `int_value`: This could store an integer reading from a sensor.
